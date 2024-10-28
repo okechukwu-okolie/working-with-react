@@ -10,6 +10,9 @@ function Map(){
         {name:'Venus', isGasPlanet:false},
         {name:'Neptune', isGasPlanet:true},
         {name:'Uranus', isGasPlanet:true},
+        {name:'moon1', isGasPlanet:false},
+        {name:'moon2', isGasPlanet:true},
+        {name:'moon3', isGasPlanet:true},
 
     ];
 
