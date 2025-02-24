@@ -1,15 +1,17 @@
 import React,{useState} from 'react'
 
 export default function TodoInput(props) {
-  const {handleAddTodos} = props
-  const [todoValue, setTodoValue] =useState('')
+  const {addedTodos, setTodoValue ,todoValue} = props
+ 
 
 
 
   return (
     <header>
-        <input type="text" placeholder='Enter todo...' value={todoValue} onChange ={(e)=>{setTodoValue(e.target.value)}} />
-        <button onClick={handleAddTodos(todoValue)}>ADD </button>
+        <input placeholder='Enter todo...' value={todoValue} onChange={(e)=>{setTodoValue(e.target.value)}}/>
+        <button onClick={()=>{addedTodos(todoValue)}}>ADD </button>
     </header>
   )
 }
+//value={todoValue} onChange ={(e)=>{setTodoValue(e.target.value)}}
+//onClick={handleAddTodos(todoValue)}

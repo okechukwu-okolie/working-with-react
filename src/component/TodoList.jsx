@@ -8,9 +8,10 @@ export default function TodoList(props) {
     <ul>
         {todos.map((todo, index)=>{
             return(
-               <TodoCard {...props} key={index} index={index} >
-                    <span>{todo}</span>
-               </TodoCard>
+              
+              <TodoCard {...props}  key={index}  index={index}>
+                {todo}
+              </TodoCard>
             )
         })}
     </ul>
